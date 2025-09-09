@@ -1,0 +1,28 @@
+import re
+import datetime
+import logging
+
+def logg_function():
+    log1 = []
+    log2 = []
+    gmail = input("Digite o seu gmail: ")
+    date_register_gmail = datetime.datetime.now()
+    password = input("Digite seu password: ")
+    date_register_password = datetime.datetime.now()
+    log1.append([password, date_register_password])
+    log2.append([gmail, date_register_gmail])
+
+    print("\nLOG DE REGISTRO:")
+    print(f"Gmail: {gmail} | Data de registro: {date_register_gmail.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Password: {'*' * len(password)} | Data de registro: {date_register_password.strftime('%Y-%m-%d %H:%M:%S')}")
+    
+
+string = '''
+    frase aleatoriamente metacaracteres nao sao ativos
+    na parte de classes do sistema operacional e blablabla
+    aleatoriamente frase aleatoria ama e amado joao e joana
+'''
+print(re.search(r'frase', string))
+print(re.findall(r'aleatoriamente', string))
+
+logg_function()
