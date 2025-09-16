@@ -1,0 +1,21 @@
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+head{
+    width:0cqmax;
+    height:0lh
+
+}
+
+body{
+    color: rgb(9, 112, 78);
+}
+title{
+    width: 22;
+    height: 33;
+    background-color: blue;
+}
